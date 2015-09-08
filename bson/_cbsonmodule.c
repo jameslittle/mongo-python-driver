@@ -140,7 +140,7 @@ void default_codec_options(codec_options_t* options) {
 
     // TODO: set to "1". PYTHON-526, setting tz_aware=True by default.
     options->tz_aware = 0;
-    options->uuid_rep = PYTHON_LEGACY;
+    options->uuid_rep = STANDARD;
     options->unicode_decode_error_handler = NULL;
     options->tzinfo = Py_None;
     Py_INCREF(options->tzinfo);
